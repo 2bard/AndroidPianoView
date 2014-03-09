@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:piano="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="horizontal"
+    android:id="@+id/main_content"
+    tools:context=".MainActivity"
+     >
+
+    
+ 
+    <com.twobard.pianoview.Piano 
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	piano:keyCount="24"
+    	piano:blackKeyDrawable="@drawable/key_black_custom"
+    	piano:whiteKeyDrawable="@drawable/key_white_custom"
+    /> 
+
+</LinearLayout>
