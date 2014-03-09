@@ -91,11 +91,11 @@ public class Piano extends View {
     }
 
     private Drawable drawKey(Canvas canvas, Boolean pressed, int resource_id, int bounds_l, int bounds_t, int bounds_r, int bounds_b) throws NotFoundException, XmlPullParserException, IOException{
-        Drawable white_key = (Drawable) Drawable.createFromXml(getResources(),getResources().getXml(resource_id));
-        white_key.setState(pressed ? new int[] {android.R.attr.state_pressed} : new int[] {-android.R.attr.state_pressed});
-        white_key.setBounds(bounds_l, bounds_t, bounds_r, bounds_b);
-        white_key.draw(canvas);
-        return white_key;
+        Drawable key = (Drawable) Drawable.createFromXml(getResources(),getResources().getXml(resource_id));
+        key.setState(pressed ? new int[] {android.R.attr.state_pressed} : new int[] {-android.R.attr.state_pressed});
+        key.setBounds(bounds_l, bounds_t, bounds_r, bounds_b);
+        key.draw(canvas);
+        return key;
     }
 
     public void draw(Canvas canvas) {
