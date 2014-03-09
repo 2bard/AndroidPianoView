@@ -5,7 +5,7 @@ A custom View for Android which displays a piano keyboard. I built and released 
 
 ![Example PianoView screenshot](pianoview-screenshot.png "Example")
 
-The PianoView can be either defined in XML or programatically:
+The PianoView can be either defined in XML or programmatically:
 
 ```xml
 <com.twobard.pianoview.Piano 
